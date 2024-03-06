@@ -8,14 +8,15 @@ namespace Module3
         static void Main(string[] args)
         {
             string myName = "Sunny";
+            byte myAge = 21;
+            bool haveAPet = true;
+            float shoeSize = (float)42.3;
 
-            Console.WriteLine(myName);
+            Console.WriteLine("My name is "+ myName);
+            Console.WriteLine("My age is " + myAge);
+            Console.WriteLine("Do i have a pet?" + haveAPet);
+            Console.WriteLine("My shoe size is " + shoeSize);
 
-            Console.WriteLine("\t Привет Мир");
-            Console.WriteLine("\t Мне 27 лет");
-            Console.WriteLine($"\t My name is \n {myName}");
-            Console.WriteLine("\u0040");
-            Console.WriteLine('\x23');
 
             Console.ReadKey();
         }
