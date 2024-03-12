@@ -7,12 +7,16 @@ namespace Module3
     {
         static void Main(string[] args)
         {
-            string myName = "Sunny";
-            Console.WriteLine("Привет, мир");
-            Console.WriteLine();
-            Console.WriteLine("Меня зовут " + myName);
+            var name = "Sunny";
 
-            Console.ReadKey();
+            var age = checked((byte)int.Parse(Console.ReadLine()));
+            Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+
+            Console.Write("What is your favorite day of week? ");
+
+            var day = (DayOfWeek)int.Parse(Console.ReadLine());
+            Console.WriteLine("Your favorite day is {0}", day);
         }
     }
 }
+
